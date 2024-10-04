@@ -1,0 +1,121 @@
+.project-container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 600px;
+    margin: 100px auto 0; /* Added top margin of 40px */
+    font-family: Arial, sans-serif;
+}
+
+.project-container h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.project-container h2 {
+    color: #555;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.project-container p {
+    color: #666;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.project-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.project-container li {
+    color: #777;
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.direction{
+    text-align: center;
+}
+.direction button{
+    font-family:sans-serif;
+    font-weight: bold;
+    background-color: #ffffff44;
+    border:none;
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    transition: 0.5s;
+    margin:0 10px;
+}
+.direction button:hover{
+    background-color: #ffffff;
+}
+.item{
+    border-radius: 15px;
+    width:300px;
+    height:500px;
+    background-image: linear-gradient(to top, #AEC0CE, #ECECF2);
+    overflow: hidden;
+    transition: 0.5s;
+    margin:10px;
+    scroll-snap-align: start;
+}
+.item .avatar{
+    display: block;
+    margin:50px auto 10px;
+    width:100px;
+    height:150px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 10px 15px #7e878d;
+}
+.item .content{
+    padding:30px;
+    font-family: monospace;
+}
+.item .content table td{
+    padding:10px 0;
+    border-bottom: 1px solid #AEC0CE;
+}
+.item .content table td:nth-child(2){
+    text-align: right;
+}
+.item .nameGroup{
+    text-align: center;
+    border-bottom:none!important;
+}
+#list{
+    display: flex;
+    width:max-content;
+}
+#formList{
+    width:1280px;
+    max-width: 100%;
+    overflow: auto;
+    margin:100px auto 50px;
+    scroll-behavior: smooth;
+    scroll-snap-type: both;
+}
+#formList::-webkit-scrollbar{
+    display: none;
+}
+@media screen and (max-width: 1024px){
+    .item{
+        width: calc(33.3vw - 20px);
+    }
+    .direction{
+        display: none;
+    }
+}
+@media screen and (max-width: 768px){
+    .item{
+        width: calc(50vw - 20px);
+    }
+    .direction{
+        display: none;
+    }
+}

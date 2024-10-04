@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>NASA Space App Challenge</title>
+  <link rel="stylesheet" href="./CSS/landingPage/style.css" />
+  <link rel="stylesheet" href="./CSS/common/navBar.css" />
+  <link rel="stylesheet" href="./CSS/landingPage/parallaxScene.css" />
+  <link rel="stylesheet" href="./CSS/landingPage/slider.css" />
+  <link rel="stylesheet" href="./CSS/landingPage/carousel.css" />
+  <link rel="stylesheet" href="./CSS/landingPage/pushable-button.css" />
+  <link rel="stylesheet" href="./CSS/common/bg-animation.css" />
+  <link rel="stylesheet" href="./CSS/common/loader.css" />
+  <link rel="stylesheet" href="./CSS/common/footer.css" />
+</head>
+
+<body onload="myFunction()">
+  <div id="loader-wrapper" class="load-wrapper" style="display:flex;">
+    <div class="loader"></div>
+  </div>
+  <ul class="radar">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+
+
+  <div id="body" style="display:none;">
+    <section class="wrapper">
+      <div id="stars"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
+    </section>
+    <nav>
+      <div class="logo"><a href="#">Harvest Horizon</a></div>
+      <ul id="navbar-links">
+        <li><a class="navbar-a1" href="#">Home</a></li>
+        <li><a class="navbar-a1" href="./aboutUs.html">About Us</a></li>
+        <li><a class="navbar-a1" href="play.html" target="_blank">Play</a></li>
+        <li><a class="navbar-a1" href="./weather.html">weather</a></li>
+        <li><a class="navbar-a1" href="./contact.html">Contact Us</a></li>
+
+      </ul>
+      <div class="nav-links">
+
+        
+
+      </div>
+    </nav>
+  
+    <section id="sectionone" class="screen">
+      <div id="scene">
+        <div data-depth="0.1" class="bg">
+          <img src="images/landingPageAssets/bg3.jpeg" alt="background.png" />
+        </div>
+        <div data-depth="0.2" class="rock1">
+          <img src="images/landingPageAssets/sat.png" alt="rock.png" />
+        </div>
+        <div data-depth="1.2" class="earth">
+          <img src="images/landingPageAssets/E4.png" alt="earth.png" />
+        </div>
+        <div data-depth="0.1" class="text">
+          <h1>Harvest Horizon</h1>
+        </div>
+        <div data-depth="0.4" class="mid">
+          <img src="images/landingPageAssets/moon land.png" alt="mid.png" />
+        </div>
+      </div>
+    </section>
+
+   
+      <div>
+        <div class="rockbg1">
+          <img src="images/landingPageAssets/rock.png" alt="">
+        </div>
+        <div class="planet-links"></div>
+      </div>
+<div class="vdo">
+  <iframe 
+      id="auto-video" 
+      src="https://www.youtube.com/embed/_hMChrJY0ZY?autoplay=1&mute=1&controls=0&loop=1&playlist=_hMChrJY0ZY" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+      allowfullscreen>
+  </iframe>
+</div>
+      
+  
+    
+    
+
+    </section>
+    <div id="footer">
+      <p>Copyright &nbsp; &copy; &nbsp; harvest horizon</p>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+  <script src="./JavaScript/index.js" type="text/javascript"></script>
+  <script src="./JavaScript/loader.js" type="text/javascript"></script>
+
+</body>
+
+</html>
