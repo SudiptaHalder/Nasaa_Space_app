@@ -10,7 +10,7 @@
   height:480px;
   border-radius: 50%;
   border:20px solid #f7f7f7;
-  background: #000000 url(/map2.jpg);
+  background: #000000 url(/images/map2.jpg);
   background-size: cover;
   box-shadow: 0 8px 0 #c5c5c5, inset 0 0 100px rgba(0,255,0,.5);
   overflow: hidden;
